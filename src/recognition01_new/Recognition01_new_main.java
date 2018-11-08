@@ -24,11 +24,6 @@ import com.ibm.watson.developer_cloud.visual_recognition.v3.model.DetectFacesOpt
 
 import com.ibm.watson.developer_cloud.visual_recognition.v3.model.DetectedFaces;
 
-import recognition1.Recognition1_lib;
-
-
-
-
 
 public class Recognition01_new_main {
 
@@ -36,23 +31,9 @@ public class Recognition01_new_main {
 
 	public static void main(String[] args) {
          // TODO Auto-generated method stub
-
 		Recognition1_lib rlib = new Recognition1_lib();
 		String file = "img/prez.jpg";
 		DetectedFaces result = rlib.result(file);
-				
-rlib.Json(result);
-				
-
-				
-
-				
-
-				
-		
-
+        rlib.Json(result);
 	}
-
-
-
 }
